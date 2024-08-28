@@ -18,8 +18,7 @@
 
         <form class="edit" action="/edit" method="post">
           <input type="hidden" name="updatedItemId" value="<%= item.id %>">
-          <input id="input<%=item.id%>" type="text" name="updatedItemTitle" value="<%= item.title %>" autocomplete="off"
-            autofocus="true" hidden="true" />
+          <input id="input<%=item.id%>" type="text" name="updatedItemTitle" value="<%= item.title %>" autocomplete="off" autofocus="true" hidden="true" />
           <button id="done<%=item.id%>" class="edit" type="submit" hidden><img class="icon"
               src="/assets/icons/check-solid.svg" alt="tick image"></button>
         </form>
